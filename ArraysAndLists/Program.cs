@@ -6,6 +6,8 @@ namespace ArraysAndLists
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Hello");
             //TODO:
 
             // Create an int Array and populate numbers 1-10
