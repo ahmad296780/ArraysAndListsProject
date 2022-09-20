@@ -8,6 +8,10 @@ namespace ArraysAndLists
         {
 
             Console.WriteLine("Hello");
+            Console.WriteLine("Hello");
+            Console.WriteLine("Hello");
+            Console.WriteLine("Hello");
+            Console.WriteLine("Hello");
             //TODO:
 
             // Create an int Array and populate numbers 1-10
