@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ArraysAndLists
 {
@@ -7,19 +8,18 @@ namespace ArraysAndLists
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hello");
-            Console.WriteLine("Hello");
-            Console.WriteLine("Hello");
-            Console.WriteLine("Hello");
-            Console.WriteLine("Hello");
             //TODO:
 
             // Create an int Array and populate numbers 1-10
+            int[] newArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             /* Create two Lists of type int.
              * Name one List "evens"
              * Name the other List "odds"
              */
+            List<int> evens = new List<int>();
+            List<int> odds = new List<int>();
+
 
             /* Using either a foreach or for loop,
              * nest an if statement to check to see
@@ -27,12 +27,45 @@ namespace ArraysAndLists
              * Then add those numbers to either the evens List
              * or the odds List
              */
+            foreach (var item in newArray)
+            {
+                //Console.WriteLine(item);
+
+                if (item % 2 != 1)
+                {
+                    odds.Add(item);
+                }
+                else
+                {
+                    evens.Add(item);
+                }
+                // Console.WriteLine(item);
+
+            }
+
 
             /* Now using foeach or for loops,
              * display each List of even and odd numbers
              *
              * Try to be creative in your display
              */
+            foreach (var item in evens)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine();
+
+            for (int i = 0; i < odds.Count; i++)
+            {
+                Console.WriteLine(odds[i]);
+            }
+            //foreach (var item in odds)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            
         }
     }
 }
